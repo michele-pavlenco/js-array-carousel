@@ -27,14 +27,39 @@ const text = [
 </div> */}
 
 let currentIndex = 0;
-const nextImg = document.getElementsByClassName("arrow-up")
+const next = document.getElementById("next")
 let img = document.getElementById("imgContainer")
+let active = document.getElementById("active")
 
 
-for(i = 0; i < items.length; i++){
-    img.innerHTML += `<div class="imgs active">
-    <img src="${items[i]}">
-    </div>`
-    
-}
+
+
+
+// for (i = 0; i < items.length; i++) {
+//     img.innerHTML += 
+//     `<div class="imgs ">
+//      <img src="${items[currentIndex]}">
+//      </div>`
+     
+// };
+
+// next.addEventListener('click', nextImg);
+
+// function nextImg() {
+//     if (i <= 4) {
+//         active.innerHTML = `
+//         <div class="imgs ">
+//         <img src="${items[i]}">
+//         </div>`
+//         d++
+
+//     } else  (i > 4) 
+//         active.innerHTML = `
+//         <div class="imgs ">
+//         <img src="${items[0]}">
+//         </div>`
+//         i = 0
+// }
+// console.log(i)
+
 

@@ -12,8 +12,11 @@ height: 100vh;
 }
 
 /* immagini  */
+.active{
+    display: block;
+}
 .imgs {
-    display: none;
+    
      height: 70vh;
     overflow: hidden;
 }
@@ -22,9 +25,7 @@ height: 100vh;
     height: 100%;
     object-fit: cover;
 }
-.imgs.active{
-    display: block;
-}
+
 
 /* immagini prevew */
 .preview-img{
