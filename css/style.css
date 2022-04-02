@@ -1,74 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 /* immagini  */
-.active{
-    display: block;
-}
 .imgs {
-    
-     height: 70vh;
-    overflow: hidden;
+  display: none;
+  height: 70vh;
+  /* position: relative; */
 }
-.imgs img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
+.imgs.active {
+  display: block;
+}
+ .title {
+  /* position: absolute; */
+  bottom: 10px;
+  right: 10px;
+}
 
 /* immagini prevew */
-.preview-img{
-    width: 30vh;
-    height: 70vh;
-    overflow: auto; 
-    position: relative; 
+.preview-img {
+  width: 20vw;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
 }
-.preview-img img{
-    height: 14vh;
-    width: 30vh;
+.preview-img img {
+  height: calc(70vh / 5);
+  width: 100%;
+}
+.preview-img .prvw-img.active {
+  border: 5px solid rgb(0, 0, 0);
 }
 /* arrows */
- .fa-solid{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    position: absolute;
+.fa-solid {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
-.arrow-up{
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50% );
-    color: black;
-    background-color: rgba(128, 128, 128, 0.39);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+.arrow-up {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  color: black;
+  background-color: rgba(128, 128, 128, 0.39);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
-.arrow-down{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50% );
-    color: black;
-    background-color: rgba(128, 128, 128, 0.39);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+.arrow-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  color: black;
+  background-color: rgba(128, 128, 128, 0.39);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
-.arrow-down:hover, .arrow-up:hover{
-    background-color: grey;
-    cursor: pointer;
+.arrow-down:hover,
+.arrow-up:hover {
+  background-color: grey;
+  cursor: poin;
 }
